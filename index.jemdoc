@@ -1,0 +1,190 @@
+# jemdoc: fwtitle
+
+# = *Zhengzhong Jin*
+
+~~~
+ {}{img_left}{./photo1.jpg}{}{320}{}{}
+*Research Interest:* I have a broad interest in cryptography and related topics in theoretical computer science. 
+# I'm working on Succinct Non-interactive ARGuments (SNARGs), zero-knowledge protocols, and secure multi-party computation.
+
+# My research focuses on the foundations of cryptographic proof systems. In particular, I'm interested in building cryptographic proofs with the following ``magical'' features: 
+#- *Succinctness:* Generating /very short/ proofs for verifying long and complicated computations, and 
+#- *Zero-Knowledge:* Proving the truth of a statement without revealing why the statement is true.
+
+#My work has built the first succinct non-interactive cryptographic proofs for /any deterministic computation/ from standard assumptions, and the first non-interactive zero-knowledge cryptographic proofs for NP from Diffie-Hellman assumptions. Both results resolve long-standing open problems in cryptography. My research draws various techniques from complexity theory, mathematical logic, and numerical analysis.
+
+# I am also exploring the intersection between cryptographic proof systems and other important topics in theoretical computer science, such as mathematical logic and machine learning.
+
+I am an assistant professor at the [https://www.khoury.northeastern.edu/ Khoury College of Computer Science] at [https://www.northeastern.edu/ Northeastern University]. I am a member of the 
+[https://neucrypt.github.io/ Cryptography and Privacy Group], the [https://www2.ccs.neu.edu/theory/ Theory Group], and the [https://cyber.northeastern.edu/ Cybersecurity and Privacy Institute]. Previously, I received my Ph.D. from Johns Hopkins University, where I was fortunately co-advised by [https://www.cs.jhu.edu/~abhishek/ Abhishek Jain] and [https://www.cs.jhu.edu/~lixints/ Xin Li]. After that I was a postdoctoral associate at [https://www.csail.mit.edu/ MIT CSAIL], mentored by [https://people.csail.mit.edu/vinodv/ Vinod Vaikuntanathan].  
+I received my bachelor's degree from Mathematics Department at Fudan University, and was advised by Yunlei Zhao.
+
+*Program Committee:* CRYPTO 2024, 2025, TCC 2023, 2024, 2025, PKC 2024, Asiacrypt 2025.
+
+/*Contact:*/ zh.jin (AT) northeastern (DOT) edu, albusmath at gmail dot com.
+#{{<p style="text-align:center;">My favorite paper is C.E. Shannon's <em> A Mathematical Theory of Communication.</em></p>}}
+
+{{<p style="text-align:center"> I'm looking for talented students to join my group! </p>}}
+~~~
+
+= Teaching
+    - Spring 2025: [https://piazza.com/northeastern/spring2025/cs38003/home CS3800 Theory of Computation]
+    - Fall 2024: [./Seminar2024Fall.html Seminar in Theoretical Computer Science, Cryptographic Proof Systems]
+
+= Publications #\n {{<font size=3 color=dimgrey style="font-weight: normal;">}}/Authors are ordered alphabetically in theoretical computer science/{{</font>}}
+    - *Succinct Non-interactive Arguments of Proximity*
+      \n Liyan Chen, Zhengzhong Jin, Daniel Wichs
+      \n *STOC 2025*
+    
+    - *Unambiguous SNARGs for P from LWE with Applications to PPAD Hardness*
+      \n Liyan Chen, Cody Freitag, Zhengzhong Jin, Daniel Wichs 
+      \n *STOC 2025*
+
+    - *Universal SNARGs for NP from Proofs of Correctness*
+      \n Zhengzhong Jin, Yael Tauman Kalai, Alex Lombardi, Surya Mathialagan
+      \n *STOC 2025* [https://eprint.iacr.org/2024/2015.pdf \[eprint\]]
+
+    - *Non-Interactive Zero-Knowledge from LPN and MQ*
+      \n Quang Dao, Aayush Jain, Zhengzhong Jin
+      \n *CRYPTO 2024* [https://eprint.iacr.org/2024/1254.pdf \[eprint\]]
+
+    - *SNARGs Under LWE via Propositional Proofs*
+      \n Zhengzhong Jin, Yael Tauman Kalai, Alex Lombardi, Vinod Vaikuntanathan
+      \n *STOC 2024* [./SNARGs_via_Prop_Proofs_pdf.pdf \[Slides from My View\]]
+
+    - *Scalable Multiparty Garbling*
+      \n Gabrielle Beck, Aarushi Goel, Aditya Hegde, Abhishek Jain, Zhengzhong Jin, Gabriel Kaptchuk
+      \n *CCS 2023* [https://eprint.iacr.org/2023/099 \[eprint\]]
+
+    - *Correlation Intractability and SNARGs from Sub-exponential DDH*
+      \n Arka Rai Choudhuri, Sanjam Garg, Abhishek Jain, Zhengzhong Jin, Jiaheng Zhang
+      \n *CRYPTO 2023* [https://eprint.iacr.org/2022/1486 \[eprint\]]
+
+    - *A Note on Non-Interactive Zero-Knowledge Proofs for NP from CDH*
+      \n Geoffroy Couteau, Abhishek Jain, Zhengzhong Jin, Willy Quach
+      \n *CRYPTO 2023* [https://eprint.iacr.org/2023/970 \[eprint\]]
+
+    - *Credibility in Private Set Membership*
+      \n Sanjam Garg, Mohammad Hajibadi, Abhishek Jain, Zhengzhong Jin, Omkant Pandey, Sina Shiehian
+      \n *PKC 2023* [https://link.springer.com/chapter/10.1007/978-3-031-31371-4_6 \[Proceeding\]]
+
+    - *Linear Insertion Deletion Codes in the High-Noise and High-Rate Regimes*
+      \n Kuan Cheng, Zhengzhong Jin, Xin Li, Zhide Wei, Yu Zheng
+      \n *ICALP 2023* [https://arxiv.org/abs/2303.17370 \[arXiv\]]
+
+    - *Succinct Zero Knowledge for Floating Point Computations*
+      \n Sanjam Garg, Abhishek Jain, Zhengzhong Jin, Yinuo Zhang
+      \n *CCS 2022* [https://dl.acm.org/doi/10.1145/3548606.3560653 \[Proceeding\]]
+
+    - *Indistinguishability Obfuscation via Mathematical Proofs of Equivalence*
+      \n Abhishek Jain, Zhengzhong Jin
+      \n *FOCS 2022* [https://eprint.iacr.org/2022/1430 \[eprint\]][./iOfromLogic.pdf \[Slides at Complexity Meeting\]][./iOfromLogic_long_crypto_full.pdf \[Slides for Cryptographers\]]
+
+    - *Pre-Constrained Encryption*
+      \n Prabhanjan Ananth, Abhishek Jain, Zhengzhong Jin, Giulio Malavolta
+      \n *ITCS 2022*
+
+    - *Compact and Flexible KEM From Ideal Lattice*
+      \n Zhengzhong Jin, Shiyu Shen, Yunlei Zhao
+      \n *IEEE TIT 2022*
+
+    - *SNARGs for P from LWE*
+      \n Arka Rai Choudhuri, Abhishek Jain, Zhengzhong Jin
+      \n *FOCS 2021* [https://eprint.iacr.org/2021/808 \[eprint\]]
+      \n {{<font color=firebrick><b>}}Invited to the SIAM Journal of Computing Special Issue{{</b></font>}} 
+
+    - *Non-Interactive Batch Arguments for NP from Standard Assumptions*
+      \n Arka Rai Choudhuri, Abhishek Jain, Zhengzhong Jin
+      \n *CRYPTO 2021* [https://eprint.iacr.org/2021/807 \[eprint\]]
+
+    - *Streaming and Small Space Approximation Algorithms for Edit Distance and Longest Common Subsequence*
+      \n Kuan Cheng, Alireza Farhadi, MohammadTaghi Hajiaghayi, Zhengzhong Jin, Xin Li, Aviad Rubinstein, Saeed Seddighin, Yu Zheng 
+      \n *ICALP 2021*
+
+    - *Non-Interactive Zero Knowledge from Sub-exponential DDH*
+      \n Abhishek Jain, Zhengzhong Jin
+      \n *EUROCRYPT 2021* [https://eprint.iacr.org/2021/514 \[eprint\]][./NIZK21.pdf \[slides (long)\]]
+      \n {{<font color=firebrick><b>}}Best Paper Award. Invited to Journal of Cryptology {{</b></font>}} 
+
+    - *Unbounded Multi-party Computation from Learning with Errors* 
+      \n Prabhanjan Ananth, Abhishek Jain, Zhengzhong Jin, Giulio Malavolta
+      \n *EUROCRYPT 2021* [https://eprint.iacr.org/2021/431 \[eprint\]]
+
+    - *Multi-key Fully-Homomorphic Encryption in the Plain Model*
+      \n Prabhanjan Ananth, Abhishek Jain, Zhengzhong Jin, Giulio Malavolta
+      \n *TCC 2020* [https://eprint.iacr.org/2020/180 \[eprint\]][./TCC20Full.pdf \[slides\]]
+
+    - *Statistical Zaps and New Oblivious Transfer Protocols*
+      \n Vipul Goyal, Abhishek Jain, Zhengzhong Jin, Giulio Malavolta
+      \n *EUROCRYPT 2020* [https://eprint.iacr.org/2020/235 \[eprint\]], subsumes [https://eprint.iacr.org/2019/839 \[eprint\]], [./EUROCRYPT20Full.pdf \[slides\]]
+
+    - *Public-Key Function-Private Hidden Vector Encryption (and More)*
+      \n James Bartusek, Brent Carmer, Abhishek Jain, Zhengzhong Jin, Tancrède Lepoint, Fermi Ma, Tal Malkin, Alex J. Malozemoff, Mariana Raykova
+      \n *ASIACRYPT 2019* [https://eprint.iacr.org/2019/746 \[eprint\]]
+
+    - *Block Edit Errors with Transpositions: Deterministic Document Exchange Protocols and Almost Optimal Binary Codes*
+      \n Kuan Cheng, Zhengzhong Jin, Xin Li, Ke Wu
+      \n *ICALP 2019* [https://arxiv.org/abs/1809.00725 \[arXiv\]][./ICALP19Full.pdf \[slides\]]
+
+    - *Generic and Practical Key Establishment from Lattice*
+    \n Zhengzhong Jin, Yunlei Zhao
+    \n *ACNS 2019* [https://link.springer.com/chapter/10.1007/978-3-030-21568-2_15 \[Proceeding\]]
+    \n *Best Student Paper Award*
+    
+    - *Deterministic Document Exchange Protocols, and Almost Optimal Binary Codes for Edit Errors*
+    \n Kuan Cheng, Zhengzhong Jin, Xin Li, Ke Wu
+    \n *FOCS 2018* [https://arxiv.org/abs/1804.05776 \[arXiv\]][./FOCS18Full.pdf \[slides\]], {{<font color=firebrick><b>}}Journal of the ACM 2022 {{</b></font>}} 
+
+= Talks
+    - *Program Obfuscation, SNARGs, and Mathematical Logic*
+      \n Brown University, Theory Seminar, Oct 2024.
+      
+    - *Universal SNARGs for NP from Proofs of Completeness*
+      \n MIT CIS Seminar, May 2024.
+
+    - *SNARGs Under LWE via Propositional Proofs*
+      \n NTT Research CIS seminar, March 2024.
+
+    - *Indistinguishability Obfuscation via Mathematical Proofs of Equivalence*
+      \n Oxford-Warwick Complexity Meetings, Oct 2022.
+      \n 63rd IEEE Symposium on Foundations of Computer Science, Nov 2022.
+      \n Charles River Crypto Day, Dec 2022.
+      \n CMU CyLab Crypto Seminar, Feb 2023.
+      \n Simons Institute, Proof Complexity and Meta-Mathematics, March 2023.
+
+    - *SNARGs for P from LWE*
+      \n Charles River Crypto Day, July 2021.
+      \n DC Area Crypto Day (virtual), November 2021. 
+      \n UCLA, December 2021. 
+ 	    \n 62nd IEEE Symposium on Foundations of Computer Science (virtual), 2021.
+#      \n Chinese Academy of Sciences, Nov 2022.
+
+    - *Non-Interactive Batch Arguments for NP from Standard Assumptions*
+      \n 41st Annual International Cryptology Conference, live talk, August 2021.
+
+    - *Non-Interactive Zero Knowledge from Sub-exponential DDH*
+      \n UC Berkeley Crypto Seminar (virtual), March 2021.
+      \n MIT CIS Seminar (virtual), April 2021.
+      \n Cornell Crypto Seminar (virtual), April 2021.
+      \n IIT Madras Crypto Seminar (virtual), July 2021.
+      \n 40th Annual International Conference on the Theory and Applications of Cryptographic Techniques (virtual), October 2021.
+      \n ENSL\/CWI\/RHUL joint online seminar (virtual), May 2022. 
+
+    - *Multi-key Fully-Homomorphic Encryption in the Plain Model*
+      \n Theory of Cryptography Conference, November 2020.
+
+    - *Statistical Zaps and New Oblivious Transfer Protocols*
+      \n 39th Annual International Conference on the Theory and Applications of Cryptographic Techniques, May 2020.
+
+    - *Block Edit Errors with Transpositions: Deterministic Document Exchange Protocols and Almost Optimal Binary Codes*
+      \n 46th International Colloquium on Automata, Languages and Programming, July 2019.
+
+    - *Generic and Practical Key Establishment from Lattice*
+      \n 17th International Conference on Applied Cryptography and Network Security, June 2019.
+
+    - *Deterministic Document Exchange Protocols, and Almost Optimal Binary Codes for Edit Errors*
+      \n Johns Hopkins University, Theory Seminar, September 2018.
+      \n Also at 59th Annual IEEE Symposium on Foundations of Computer Science, October 2018.
+#= Others 
+#    - *Gold Medal*, ACM-ICPC Asia Regional Contest Guangzhou site, 2014
+#    - *Gold Medal*, ACM-ICPC Asia Regional Contest Anshan site, 2014

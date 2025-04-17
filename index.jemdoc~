@@ -1,0 +1,89 @@
+# jemdoc: fwtitle
+
+# = *Zhengzhong Jin*
+
+~~~
+{}{img_left}{photo.jpg}{}{250px}{}{}
+*Research Interests:*
+ I have a broad interest in Theoretical Computer Science. Currently, I am working on Cryptography and Coding Theory.
+
+
+I am a fourth year Ph.D. student at Johns Hopkins University, fortunately co-advised by [https://www.cs.jhu.edu/~abhishek/ Abhishek Jain] and [https://www.cs.jhu.edu/~lixints/ Xin Li]. 
+Previously, I received my bachelor's degree in Information and Computing Science in School of Mathematical Sciences at Fudan University, and was fortunately advised by Prof. Yunlei Zhao.
+
+My favorite paper is C.E. Shannon's /A Mathematical Theory of Communication/.
+
+/*Contact:* zjin12 (AT) jhu (DOT) edu/
+~~~
+
+# = Manuscripts
+
+= Publications
+    - *Non-Interactive Batch Arguments for NP from Standard Assumptions*
+      \n with Arka Rai Choudhuri, Abhishek Jain
+      \n *CRYPTO 2021*
+
+    - *Streaming and Small Space Approximation Algorithms for Edit Distance and Longest Common Subsequence*
+      \n with Kuan Cheng, Alireza Farhadi, MohammadTaghi Hajiaghayi, Xin Li, Aviad Rubinstein, Saeed Seddighin, Yu Zheng 
+      \n *ICALP 2021*
+
+    - *Non-Interactive Zero Knowledge from Sub-exponential DDH*
+      \n with Abhishek Jain
+      \n *EUROCRYPT 2021* [https://eprint.iacr.org/2021/514 \[eprint\]][http://cs.jhu.edu/~zzjin/NIZK21.pdf \[slides (long)\]]
+      \n {{<font color=red><b>}}Invited to Journal of Cryptology{{</b></font>}} 
+
+    - *Unbounded Multi-party Computation from Learning with Errors* 
+      \n with Prabhanjan Ananth, Abhishek Jain, Giulio Malavolta
+      \n *EUROCRYPT 2021* [https://eprint.iacr.org/2021/431 \[eprint\]]
+
+    - *Multi-key Fully-Homomorphic Encryption in the Plain Model*
+      \n with Prabhanjan Ananth, Abhishek Jain, Giulio Malavolta
+      \n *TCC 2020* [https://eprint.iacr.org/2020/180 \[eprint\]][http://cs.jhu.edu/~zzjin/TCC20Full.pdf \[slides\]]
+
+    - *Statistical Zaps and New Oblivious Transfer Protocols*
+      \n with Vipul Goyal, Abhishek Jain, Giulio Malavolta
+      \n *EUROCRYPT 2020* [https://eprint.iacr.org/2020/235 \[eprint\]], subsumes [https://eprint.iacr.org/2019/839 \[eprint\]], [http://cs.jhu.edu/~zzjin/EUROCRYPT20Full.pdf \[slides\]]
+
+    - *Public-Key Function-Private Hidden Vector Encryption (and More)*
+      \n with James Bartusek, Brent Carmer, Abhishek Jain, Tancrède Lepoint, Fermi Ma, Tal Malkin, Alex J. Malozemoff, Mariana Raykova
+      \n *ASIACRYPT 2019* [https://eprint.iacr.org/2019/746 \[eprint\]]
+
+    - *Block Edit Errors with Transpositions: Deterministic Document Exchange Protocols and Almost Optimal Binary Codes*
+      \n with Kuan Cheng, Xin Li, Ke Wu
+      \n *ICALP 2019* [https://arxiv.org/abs/1809.00725 \[arXiv\]][http://cs.jhu.edu/~zzjin/ICALP19Full.pdf \[slides\]]
+
+    - *Deterministic Document Exchange Protocols, and Almost Optimal Binary Codes for Edit Errors*
+    \n with Kuan Cheng, Xin Li, Ke Wu
+    \n *FOCS 2018* [https://arxiv.org/abs/1804.05776 \[arXiv\]][http://cs.jhu.edu/~zzjin/FOCS18Full.pdf \[slides\]]
+
+    - *Generic and Practical Key Establishment from Lattice*
+    \n with Yunlei Zhao
+    \n *ACNS 2019* [https://link.springer.com/chapter/10.1007/978-3-030-21568-2_15 \[Proceeding\]]
+    \n *Best Student Paper Award*
+
+= Talks
+    - *Non-Interactive Zero Knowledge from Sub-exponential DDH*
+      \n UC Berkeley Crypto Seminar (virtual), March 2021.
+      \n MIT CIS Seminar (virtual), April 2021.
+      \n Cornell Crypto Seminar (virtual), April 2021.
+
+    - *Multi-key Fully-Homomorphic Encryption in the Plain Model*
+      \n Theory of Cryptography Conference, November 2020.
+
+    - *Statistical Zaps and New Oblivious Transfer Protocols*
+      \n 39th Annual International Conference on the Theory and Applications of Cryptographic Techniques, May 2020.
+
+    - *Block Edit Errors with Transpositions: Deterministic Document Exchange Protocols and Almost Optimal Binary Codes*
+      \n 46th International Colloquium on Automata, Languages and Programming, July 2019.
+
+    - *Generic and Practical Key Establishment from Lattice*
+      \n 17th International Conference on Applied Cryptography and Network Security, June 2019.
+
+    - *Deterministic Document Exchange Protocols, and Almost Optimal Binary Codes for Edit Errors*
+      \n Johns Hopkins University, Theory Seminar, September 2018.
+      \n Also at 59th Annual IEEE Symposium on Foundations of Computer Science, October 2018.
+
+= Awards
+    - *Gold Medal*, ACM-ICPC Asia Regional Contest Guangzhou site, 2014
+    - *Gold Medal*, ACM-ICPC Asia Regional Contest Anshan site, 2014
+

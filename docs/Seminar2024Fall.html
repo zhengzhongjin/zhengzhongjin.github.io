@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>CS7870 - Seminar in TCS: Cryptographic Proof Systems</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">CS7870 - Seminar in TCS: Cryptographic Proof
+Systems</h1>
+</header>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 75%;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  h1, h2, h3 {
+      color: #333;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  ul {
+      margin-left: 20px;
+  }
+
+  a {
+      color: blue !important;
+  }
+
+  table {
+      border-collapse: collapse;
+      width: 100%;
+  }
+  th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+  }
+  th {
+      background-color: #f2f2f2;
+  }
+  td:nth-child(1) {
+      width: 10%; /* Adjust this percentage to make the Date column wider */
+  }
+  td:nth-child(2) {
+      width: 40%; /* Adjust this percentage to make the Topic column wider */
+  }
+  td:nth-child(3) {
+      width: 70%; /* Adjust this percentage to balance the Details column */
+  }
+
+</style>
+<h2 id="course-information">Course Information</h2>
+<p><strong>Time:</strong> Wednesday 10:15 AM - 11:45 AM, Thursday 10:00
+- 11:40 AM.<br />
+<strong>Location:</strong> Wednesday: 177 Huntington Ave, 6th floor 602.
+Thursday: 177 Huntington Ave, 5th floor 503. <span
+style="color: red;">Access to 177 Huntington is restricted. Send me an
+email if you need access.</span><br />
+<strong>Pre-requisites:</strong> Basic knowledge of cryptography and
+complexity theory. <span style="color: blue;">If you need to waive
+pre-requisite courses, send me an email.</span></p>
+<h2 id="course-description">Course Description</h2>
+<p>This seminar is centered around Succinct Non-interactive Arguments
+(SNARGs), a cryptographic proof system that allows a prover to convince
+a verifier that a statement is true through a very short message. SNARGs
+are used in blockchain and cryptocurrency infrastructure to enhance
+privacy and improve scalability. Their development incorporates a
+variety of techniques from algorithm and complexity theory.</p>
+<p>The course will cover both foundational theory and modern practical
+approaches, including polynomial commitments, interactive oracle proofs
+and their variants, linear-time prover schemes, and recent progress in
+basing SNARGs on standard assumptions. If time permits, we will also
+explore proofs of proximity and their connection to property testing.
+This curriculum will equip students with the knowledge to understand and
+innovate cryptographic proofs for future research.</p>
+<p>There will be no written exams in this course. Students will also be
+encouraged to present.</p>
+<h2 id="schedule-tentative">Schedule (tentative)</h2>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Topic</strong></th>
+<th><strong>Reading</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sept. 11</strong></td>
+<td>Introduction</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sept. 12</strong></td>
+<td>Linear PCPs, BLR linear testing</td>
+<td><a
+href="https://cseweb.ucsd.edu/~mihir/papers/linearity.pdf">Linearity
+Testing in Characteristic Two</a> and <a
+href="https://www.cs.purdue.edu/homes/hmaji/teaching/Spring%202019/lectures/33.pdf">related
+lecture notes</a></td>
+</tr>
+<tr>
+<td>Sept. 18</td>
+<td>Kilian</td>
+<td><a
+href="https://dl.acm.org/doi/pdf/10.1145/129712.129782">Kilian’92</a> <a
+href="https://eprint.iacr.org/2024/1434.pdf">Chiesa-Dall’Agnol-Guan-Spooner-Yogev’24</a></td>
+</tr>
+<tr>
+<td>Sept. 19</td>
+<td>Micali</td>
+<td>Fiat-Shamir, Random Oracle Model, <a
+href="https://ieeexplore.ieee.org/document/365746">Micali’s CS
+Proofs</a></td>
+</tr>
+<tr>
+<td><strong>Sept. 25</strong></td>
+<td>Sum-check &amp; low-degree testing</td>
+<td>Related lecture notes, book chapters, and <a
+href="https://ic-people.epfl.ch/~achiesa/classes/CS294-S2019.html">Chiesa’s
+Course</a></td>
+</tr>
+<tr>
+<td><strong>Sept. 26</strong></td>
+<td>GKR Protocol</td>
+<td><a href="https://eccc.weizmann.ac.il/report/2017/108/">GKR08</a>, <a
+href="https://hackmd.io/@timofey/rJW--amO0">Understanding GKR</a>, <a
+href="https://www.khoury.northeastern.edu/home/viola/papers/moti.pdf#page=170.55">Viola’s
+Book</a>, <a
+href="https://people.cs.georgetown.edu/jthaler/GKRNote.pdf">Thaler’s
+Note</a></td>
+</tr>
+<tr>
+<td>Oct. 2</td>
+<td>SNARGs from Linear PCPs</td>
+<td><a
+href="https://eprint.iacr.org/2012/718.pdf">Bitansky-Chiesa-Ishai-Ostrovsky-Paneth’13</a></td>
+</tr>
+<tr>
+<td>Oct. 3</td>
+<td>Interactive Oracle Proofs (IOPs)</td>
+<td><a
+href="https://ic-people.epfl.ch/~achiesa/classes/CS294-F2020.html">Chiesa’s
+Course</a></td>
+</tr>
+<tr>
+<td><strong>Oct. 9</strong></td>
+<td>Polynomial Commitments I (<strong>Mingqi</strong>)</td>
+<td><a
+href="https://cacr.uwaterloo.ca/techreports/2010/cacr2010-10.pdf">KZG</a>,
+<a href="https://eprint.iacr.org/2017/1132.pdf">Hyrax</a></td>
+</tr>
+<tr>
+<td><strong>Oct. 10</strong></td>
+<td>Polynomial Commitments II (<strong>Kabir</strong>)</td>
+<td><a href="https://eccc.weizmann.ac.il/report/2017/134/download/">FRI:
+Fast Reed-Solomon IOP of Proximity</a></td>
+</tr>
+<tr>
+<td>Oct. 16</td>
+<td>Polynomial Commitments III</td>
+<td><a
+href="https://www.cs.yale.edu/homes/spielman/Research/ITsuperc.pdf">Spielman’s
+Linear-time Codes</a>, <a
+href="https://eprint.iacr.org/2021/1043.pdf">Brakedown</a>, <a
+href="https://eprint.iacr.org/2022/1010.pdf">Orion</a>, <a
+href="https://www.youtube.com/watch?v=1S7ZjqG9uyI">Yupeng’s lec</a></td>
+</tr>
+<tr>
+<td>Oct. 17</td>
+<td>Incrementally Verifiable Computation I</td>
+<td><a
+href="https://dspace.mit.edu/handle/1721.1/38663">Valiant08</a></td>
+</tr>
+<tr>
+<td><strong>Oct. 23</strong></td>
+<td>Incrementally Verifiable Computation II
+(<strong>Julia</strong>)</td>
+<td>Folding Scheme <a
+href="https://eprint.iacr.org/2021/370.pdf">Nova</a>, <a
+href="https://eprint.iacr.org/2023/573.pdf">HyperNova</a></td>
+</tr>
+<tr>
+<td><strong>Oct. 24</strong></td>
+<td>Concretely Efficient Prover I</td>
+<td><a href="https://eprint.iacr.org/2019/317.pdf">Libra</a>,
+Linear-time IOPs <a
+href="https://eprint.iacr.org/2019/550.pdf">Spartan</a></td>
+</tr>
+<tr>
+<td>Oct. 30</td>
+<td>Concretely Efficient Prover II</td>
+<td><a href="https://eprint.iacr.org/2019/953.pdf">Plonk</a>, (<a
+href="https://eprint.iacr.org/2022/1355.pdf">HyperPlonk</a>)</td>
+</tr>
+<tr>
+<td>Oct. 31</td>
+<td>Lookup Arguments (<strong>LaKyah</strong>)</td>
+<td><a href="https://eprint.iacr.org/2023/1216.pdf">Lasso</a>, <a
+href="https://eprint.iacr.org/2023/1217.pdf">Jolt</a></td>
+</tr>
+<tr>
+<td><strong>Nov. 6</strong></td>
+<td>Standard Assumptions I</td>
+<td><a href="https://eprint.iacr.org/2014/669.pdf">SSB</a>, CI Hash <a
+href="https://eprint.iacr.org/2018/1248.pdf">Canetti et. al’19</a>, <a
+href="https://web.eecs.umich.edu/~cpeikert/pubs/nizk-lwe.pdf">Peikert-Shiehian’19</a></td>
+</tr>
+<tr>
+<td><strong>Nov. 7</strong></td>
+<td>Standard Assumptions II</td>
+<td><a href="https://eprint.iacr.org/2020/980.pdf">SNARGs for
+Bounded-depth P</a></td>
+</tr>
+<tr>
+<td>Nov. 13</td>
+<td>Standard Assumptions III</td>
+<td><a href="https://eprint.iacr.org/2021/807.pdf">SNARGs for Batch-NP,
+from LWE</a></td>
+</tr>
+<tr>
+<td>Nov. 14</td>
+<td>Standard Assumptions IV</td>
+<td><a href="https://eprint.iacr.org/2021/808.pdf">SNARGs for P from
+LWE</a></td>
+</tr>
+<tr>
+<td><strong>Nov. 20</strong></td>
+<td>Interactive Proofs and Learning Theory
+(<strong>Mingqi</strong>)</td>
+<td><a href="https://eccc.weizmann.ac.il/report/2020/058/">Interactive
+Proofs for Verifying Machine Learning</a></td>
+</tr>
+<tr>
+<td><strong>Nov. 21</strong></td>
+<td>Interactive Proofs and Property Testing
+(<strong>Ethan</strong>)</td>
+<td><a href="https://eccc.weizmann.ac.il/report/2023/161/">Doubly
+Efficient Interactive Proofs for Distribution Properties</a></td>
+</tr>
+<tr>
+<td>Dec. 4</td>
+<td>Interactive Proofs and LLM (<strong>Quan and Kashif</strong>)</td>
+<td><a href="https://arxiv.org/pdf/2405.15722">Models that prove their
+own correctness</a></td>
+</tr>
+<tr>
+<td>Dec. 5</td>
+<td>TBD</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="readings">Readings</h2>
+<p>Recent papers in the field and book chapters. Specific readings will
+be distributed before each topic discussion.</p>
+<p>Textbooks:</p>
+<ol type="1">
+<li><a
+href="https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.pdf">Proofs,
+Arguments, and Zero-Knowledge</a></li>
+<li><a
+href="https://github.com/hash-based-snargs-book/hash-based-snargs-book/blob/main/snargs-book.pdf">Building
+Cryptographic Proofs from Hash Functions</a></li>
+</ol>
+<h2 id="course-deliverables">Course Deliverables</h2>
+<ul>
+<li><strong>Lecture scribe notes:</strong> 20%</li>
+<li><strong>Participation and Discussions:</strong> 20%</li>
+<li><strong>Presentation:</strong> 60%</li>
+</ul>
+</body>
+</html>
