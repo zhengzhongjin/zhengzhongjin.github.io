@@ -32,6 +32,14 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
     - Fall 2024: [./Seminar2024Fall.html Seminar in Theoretical Computer Science, Cryptographic Proof Systems]
 
 = Publications #\n {{<font size=3 color=dimgrey style="font-weight: normal;">}}/Authors are ordered alphabetically in theoretical computer science/{{</font>}}
+    - *Sometimes-Decryptable Homomorphic Encryption from Sub-exponential DDH*
+      \n Abhishek Jain, Zhengzhong Jin
+      \n *CRYPTO 2025*
+    
+    - *Incrementally Verifiable Computation for NP from Standard Assumptions*
+      \n Pratish Datta, Abhishek Jain, Zhengzhong Jin, Alexis Korb, Surya Mathialagan, Amit Sahai
+      \n *CRYPTO 2025*
+
     - *Succinct Non-interactive Arguments of Proximity*
       \n Liyan Chen, Zhengzhong Jin, Daniel Wichs
       \n *STOC 2025*
@@ -133,9 +141,13 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
     
     - *Deterministic Document Exchange Protocols, and Almost Optimal Binary Codes for Edit Errors*
     \n Kuan Cheng, Zhengzhong Jin, Xin Li, Ke Wu
-    \n *FOCS 2018* [https://arxiv.org/abs/1804.05776 \[arXiv\]][./FOCS18Full.pdf \[slides\]], {{<font color=firebrick><b>}}Journal of the ACM 2022 {{</b></font>}} 
+    \n *FOCS 2018* [https://arxiv.org/abs/1804.05776 \[arXiv\]][./FOCS18Full.pdf \[slides\]] 
+    \n {{<font color=firebrick><b>}}Journal of the ACM 2022 {{</b></font>}} 
 
 = Talks
+    - *Succinct Non-interactive Arguments of Proximity*
+      \n Boston University, Security Seminar, April 2025.
+
     - *Program Obfuscation, SNARGs, and Mathematical Logic*
       \n Brown University, Theory Seminar, Oct 2024.
       
