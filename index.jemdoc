@@ -32,6 +32,14 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
     - Fall 2024: [./Seminar2024Fall.html Seminar in Theoretical Computer Science, Cryptographic Proof Systems]
 
 = Publications #\n {{<font size=3 color=dimgrey style="font-weight: normal;">}}/Authors are ordered alphabetically in theoretical computer science/{{</font>}}
+    - *On the Impossibility of SNARGs with Short CRS* /(or: Revisiting Gentry-Wichs Barrier in the Non-adaptive Setting)/
+      \n Liyan Chen, Zhengzhong Jin
+      \n *FOCS 2025*
+
+    - *On Succinct Obfuscation via Propositional Logic*
+      \n Abhishek Jain, Zhengzhong Jin, Surya Mathialagan, Omer Paneth
+      \n *FOCS 2025*
+
     - *Sometimes-Decryptable Homomorphic Encryption from Sub-exponential DDH*
       \n Abhishek Jain, Zhengzhong Jin
       \n *CRYPTO 2025*

@@ -9,7 +9,7 @@ docs : $(PHDOCS)
 .PHONY : update
 
 docs/%.html : %.jemdoc
-	./jemdoc.py -c index.conf -o $@ $<
+	python2.7 jemdoc.py -c index.conf -o $@ $<
 
 docs/Seminar2024Fall.html : Seminar2024Fall.md
 	@pandoc -s -o $@ $<
