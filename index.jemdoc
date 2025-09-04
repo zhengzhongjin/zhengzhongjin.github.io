@@ -28,6 +28,7 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
 ~~~
 
 = Teaching
+    - Fall 2025: [https://piazza.com/northeastern/fall2025/cs38004/home CS3800 Theory of Computation]
     - Spring 2025: [https://piazza.com/northeastern/spring2025/cs38003/home CS3800 Theory of Computation]
     - Fall 2024: [./Seminar2024Fall.html Seminar in Theoretical Computer Science, Cryptographic Proof Systems]
 
@@ -46,7 +47,7 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
     
     - *Incrementally Verifiable Computation for NP from Standard Assumptions*
       \n Pratish Datta, Abhishek Jain, Zhengzhong Jin, Alexis Korb, Surya Mathialagan, Amit Sahai
-      \n *CRYPTO 2025*
+      \n *CRYPTO 2025* [https://eprint.iacr.org/2025/1546.pdf \[eprint\]]
 
     - *Succinct Non-interactive Arguments of Proximity*
       \n Liyan Chen, Zhengzhong Jin, Daniel Wichs
@@ -153,6 +154,9 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
     \n {{<font color=firebrick><b>}}Journal of the ACM 2022 {{</b></font>}} 
 
 = Talks
+    - *Towards SNARGs for NP from Standard Assumptions*
+      \n Simons Institute, Proofs workshop, July 2025.
+
     - *Succinct Non-interactive Arguments of Proximity*
       \n Boston University, Security Seminar, April 2025.
 
@@ -171,13 +175,14 @@ I received my bachelor's degree from Mathematics Department at Fudan University,
       \n Charles River Crypto Day, Dec 2022.
       \n CMU CyLab Crypto Seminar, Feb 2023.
       \n Simons Institute, Proof Complexity and Meta-Mathematics, March 2023.
+      \n Simons Institute, Obfuscation workshop, June 2025.
 
     - *SNARGs for P from LWE*
       \n Charles River Crypto Day, July 2021.
       \n DC Area Crypto Day (virtual), November 2021. 
       \n UCLA, December 2021. 
  	    \n 62nd IEEE Symposium on Foundations of Computer Science (virtual), 2021.
-#      \n Chinese Academy of Sciences, Nov 2022.
+      \n Chinese Academy of Sciences, Nov 2022.
 
     - *Non-Interactive Batch Arguments for NP from Standard Assumptions*
       \n 41st Annual International Cryptology Conference, live talk, August 2021.
